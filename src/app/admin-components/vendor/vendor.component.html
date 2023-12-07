@@ -1,0 +1,96 @@
+
+
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8" style="min-height: 200px; background-color: rgb(75, 245, 103); background-size: cover; background-position: center top;">
+    <!-- Mask -->
+        <!--<span class="mask bg-gradient-danger opacity-8"></span>-->
+        <!-- Header container -->
+        <!--<div class="container-fluid d-flex align-items-center">
+          <div class="row">
+          </div>
+        </div>-->
+    </div>
+    <div class="container-fluid mt--7">
+        <div class="row">
+            <div class="col">
+                <div>
+                    <div>
+                        <div class="card shadow">
+                            
+                                <div class="card-header border-0">
+                                    <div class="row">
+                                        <h3 class="mb-0">Vendor Table</h3>
+                                        <button (click)="toggle()" id="bt"class="btn btn-primary" style=" margin-left: 790px;">
+                                            {{buttonName}}
+                                        </button>
+                                    </div>
+                                </div>
+                                <ng-container *ngIf="show">
+                                    <div style=" margin-left: 25px; text-align: left;">
+                                        <div class = "row">
+                                            <div class="form-group" style="margin-left:20px ;">
+                                                <label class="form-control-label" for = "input-text">First Name</label>
+                                                <input type="text " id="input-text" class="form-control form-control-alternative" >
+                                            </div>
+                                        
+                                            <div class="form-group" style="margin-left:20px ;">
+                                                <label class="form-control-label" for = "input-text">Last Name</label>
+                                                <input type="text " id="input-text" class="form-control form-control-alternative" >
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group" style="margin-left:20px ;">
+                                                <label class="form-control-label" for = "input-text">E-mail</label>
+                                                <input type="text " id="input-text" class="form-control form-control-alternative" >
+                                            </div>
+                                        
+                                            <div class="form-group" style="margin-left:20px ;">
+                                                <label class="form-control-label" for = "phone">Phone no.</label>
+                                                <input type="tel " id="phone" name="phone" pattern="[0-9]" class="form-control form-control-alternative" >
+                                            </div>
+                                        </div>
+                                        <div class="row">   
+                                            <div class="form-group" style="margin-left:20px ;">
+                                                <label class="form-control-label" for = "input-text">Company Name</label>
+                                                <input type="text " id="input-text" class="form-control form-control-alternative" >
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group">
+                                                <button class="btn btn-primary" type="save" style="margin-top: 35px; margin-left: 30px;">Save</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </ng-container>
+    
+                            
+                            <div class="table-responsive" >
+                                <table class="table align-items-center table-flush" >
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th scope="col">Sr.</th>
+                                            <th scope="col">First Name</th>
+                                            <th scope="col">Last Name</th>
+                                            <th scope="col">E-mail</th>
+                                            <th scope="col">Phone no.</th>
+                                            <th scope="col">Company Name</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr *ngFor="let vendor of vendors; let i = index">
+                                            <td>{{i+1}}</td>
+                                            <td>{{vendor.firstName}}</td>
+                                            <td>{{vendor.lastName}}</td>
+                                            <td>{{vendor.email}}</td>
+                                            <td>{{vendor.phoneNo}}</td>
+                                            <td>{{vendor.companyName}}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    
